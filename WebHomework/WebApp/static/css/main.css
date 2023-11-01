@@ -1,0 +1,162 @@
+.question-image{
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.main-question-image{
+    max-height: 200px;
+    max-width: 200px;
+}
+.row {
+  margin-top: 100px;
+}
+
+.question-row{
+    margin-top: 10px;
+}
+.question-title{
+    font-size: 20px;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.main-question-title{
+    font-size: 30px;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.question-text{
+    font-size: 16px;
+    font-family: Helvetica;
+}
+
+.question{
+    border: 1px solid grey;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.border{
+    border: 10px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.pop_tags{
+    margin-top: 10px;
+    margin-left:60px;
+}
+
+.best_members{
+    margin-top: 80px;
+    margin-left:70px;
+
+}
+
+.tags{
+    margin-right:10px;
+}
+
+.nav-avatar{
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.nav-text{
+    font-size: 12px;
+    margin-top: 8px;
+    font-family: Helvetica;
+}
+
+.ava-text{
+    font-size: 18px;
+    margin-top: 2px;
+    font-family: Helvetica;
+}
+
+.like-text{
+    font-size:16px;
+    margin-top: 8px;
+    font-family: Helvetica;
+    padding-left: 20px;
+}
+
+.main-like-text{
+    font-size:26px;
+    margin-top: 8px;
+    font-family: Helvetica;
+    padding-left: 20px;
+}
+
+.settings-row{
+    margin-top:0px;
+}
+
+.no-style-link{
+    color: black;
+    text-decoration: none;
+}
+
+.question-tags{
+    font-size: 14px;
+    font-family: Helvetica;
+}
+
+.like-button {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 5px solid grey;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.like-button:hover {
+    background-color: #F2F2F2;
+}
+
+.page-buttons{
+    margin-top: 20px;
+}
+
+.icon{
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+.main-icon{
+    margin-top: 4px;
+    font-size: 28px;
+}
+
+.ask-margin{
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: Helvetica;
+}
+
+.ask-button{
+    margin-top: 20px;
+}
+
+.upload-ava{
+    margin-top: 40px;
+}
+
+.login-text{
+    font-size: 44px;
+    font-family: Helvetica;
+}
+
+.warning-text{
+    font-size: 24px;
+    color: red;
+    font-family: Helvetica;
+}
+
+.row2 {
+    margin-top: 50px;
+}
