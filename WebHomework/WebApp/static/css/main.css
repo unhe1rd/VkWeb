@@ -80,7 +80,7 @@
     font-size:16px;
     margin-top: 8px;
     font-family: Helvetica;
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
 .main-like-text{
@@ -125,11 +125,17 @@
 .icon{
     margin-top: 4px;
     font-size: 14px;
+    margin-right: 5px;
+    border: 1px solid grey;
+    border-radius: 3px;
 }
 
 .main-icon{
     margin-top: 4px;
     font-size: 28px;
+    margin-right: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
 }
 
 .ask-margin{
@@ -160,3 +166,12 @@
 .row2 {
     margin-top: 50px;
 }
+
+.row3 {
+    margin-top: 25px;
+}
+
+.bottom {
+    bottom: 0;
+    position:fixed;
+    width: 100%;

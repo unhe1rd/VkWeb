@@ -1,4 +1,4 @@
-<html lang="en" class="h-100"><head>
+<html lang="en" class="h-100" xmlns:https="http://www.w3.org/1999/xhtml"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -28,8 +28,8 @@
 </head>
 <body class="d-flex flex-column h-100">
     <link href="..static/css/bootstrap.css" rel="stylesheet">
-    <link href="../static/css/main.css" rel="stylesheet">
-    <script src="..static/js/bootstrap.js"></script>
+    <link href="../../static/css/main.css" rel="stylesheet">
+    <script src="../../static/js/bootstrap.js"></script>
 
 <header>
     <!-- Fixed navbar -->
@@ -41,12 +41,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0 border">
-                    <li >
-                        <img class="nav-avatar" src="https://yt3.googleusercontent.com/ytc/APkrFKYsoaQpZjWjvlJEaXcjP8eGObglBiMhHEaWoKeZgg=s900-c-k-c0x00ffffff-no-rj" alt="Avatar on nav-bar">
-                    </li>
-                       <a class="nav-link ava-text" href="#">Papich</a>
-                        <a class="nav-link nav-text" href="#">Log out</a>
-                        <a class="nav-link nav-text" href="#">Settings</a>
+                    <a class="nav-link ava-text" href="#">Not logged in</a>
+                    <a class="nav-link nav-text" href="#">Log in</a>
+                    <a class="nav-link nav-text" href="#">Register</a>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
@@ -56,55 +53,3 @@
         </div>
     </nav>
 </header>
-
-<!-- Begin page content -->
-<main class="flex-shrink-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-8">
-                <h1>New Question</h1>
-                <h2 class="h2 mb-2 warning-text">Warning textarea</h2>
-                <div class="ask-margin">
-                    <input type="text" class="form-control" placeholder="Title">
-                </div>
-                <div class="ask-margin">
-                    <textarea class="form-control" rows="15" placeholder="Text"></textarea>
-                </div>
-                <div class="ask-margin">
-                    <input type="text" class="form-control" placeholder="Tags">
-                </div>
-                <button type="button" class="btn btn-dark ask-button">Ask!</button>
-            </div>
-
-            <!-- Popular tags -->
-            <div class="col-4">
-                <div class="row pop_tags">
-                    <h2>Popular tags</h2>
-                    <div class="tags">
-                        <span class="badge bg-primary">Cats</span>
-                        <span class="badge bg-secondary">Nature</span>
-                        <span class="badge bg-success">Vk</span>
-                        <span class="badge bg-danger">BMSTU</span>
-                        <span class="badge bg-light-blue">Memes</span>
-                    </div>
-                </div>
-                <!-- Best Members -->
-                <div class="best_members">
-                    <h2>Best members</h2>
-                    <div><a href="" class="no-style-link">Mikhail Ulanov</a></div>
-                    <div><a href="" class="no-style-link">Mikhail Ulanov</a></div>
-                    <div><a href="" class="no-style-link">Mikhail Ulanov</a></div>
-                    <div><a href="" class="no-style-link">Mikhail Ulanov</a></div>
-                    <div><a href="" class="no-style-link">Mikhail Ulanov</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
-<footer class="footer mt-auto py-2 bg-dark">
-    <div class="container">
-        <span class="text-white">🧼 Created by unheard @2023 🧼</span>
-    </div>
-</footer>
-</body>
-</html>
