@@ -14,7 +14,7 @@ def paginate(objects, request, per_page):
     except PageNotAnInteger:
         page_items = paginator.page(1).object_list
     except EmptyPage:
-        raise Http404("Страница не существует")
+        raise Http404('Страница не найдена')
     return page_items
 
 
@@ -64,6 +64,10 @@ def question(request, question_id):
     ]
     main = questions[question_id]
     return render(request, 'question.html', {'questions': questions, 'main': main})
+
+
+def handler404(request, exception):
+    return render(request, 'warning.html', status=404)
 
 
 def ask(request):

@@ -129,3 +129,5 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static',
     BASE_DIR / 'elements'
 ]
+
+handler404 = 'WebApp.views.handler404'
