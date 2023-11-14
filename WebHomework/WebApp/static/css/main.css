@@ -12,7 +12,7 @@
 }
 
 .question-row{
-    margin-top: 10px;
+    margin-top: 0px;
 }
 .question-title{
     font-size: 20px;
@@ -171,11 +171,6 @@
     margin-top: 25px;
 }
 
-.bottom {
-    bottom: 0;
-    position:fixed;
-    width: 100%;
-
 .right3{
     margin-left:50px;
 }
@@ -183,3 +178,6 @@
 .flex{
     flex-grow:1;
 }
+
+
+

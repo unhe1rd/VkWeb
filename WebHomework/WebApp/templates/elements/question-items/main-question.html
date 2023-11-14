@@ -1,0 +1,14 @@
+<div class="row question-row mt-auto">
+    <div class="col-3">
+        <img src="https://fanibani.ru/wp-content/uploads/2021/07/milie004-1024x910.jpg" alt="Avatar" class="main-question-image">
+        {% include 'elements/like-buttons-item.html'%}
+    </div>
+    <div class="col-9">
+        <div class="main-question-title"> <a href="{% url 'question' question_id=main.id %}" class="no-style-link"> {{ main.title }} </a></div>
+        <div class="question-text">{{ main.content }}</div>
+        <div>
+            Tags:
+            <a href="{% url 'tag' tag_name='Cats' %}" class="no-style-link tags-link question-tags"> Cats</a>
+        </div>
+    </div>
+</div>

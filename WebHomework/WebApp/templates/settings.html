@@ -1,119 +1,14 @@
-lang="en" class="h-100"><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="generator" content="Hugo 0.104.2">
-    <link rel="stylesheet" href="..static/css/bootstrap.css" type="text/css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@Answers soap.ru</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="..static/css/bootstrap.css" rel="stylesheet">
-    <script src="../static/js/bootstrap.js"></script>
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sticky-footer-navbar/">
-    <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+{% extends 'layouts/base.html' %}
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
-    <meta name="theme-color" content="#712cf9">
+{% block content %}
 
-    <!-- Custom styles for this template -->
-    <link href="sticky-footer-navbar.css" rel="stylesheet">
+<h1>Settings: Papich </h1>
 
-</head>
-<body class="d-flex flex-column h-100">
-    <link href="..static/css/bootstrap.css" rel="stylesheet">
-    <link href="../static/css/main.css" rel="stylesheet">
-    <script src="../static/js/bootstrap.js"></script>
+<!-- Форма настроек пользователя -->
+{% include 'elements/settings-items/settings-form.html' %}
+<button type="button" class="btn btn-dark ask-button">Ask!</button>
 
-<header>
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Answers  🧼.ru</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0 border">
-                    <li >
-                        <img class="nav-avatar" src="https://yt3.googleusercontent.com/ytc/APkrFKYsoaQpZjWjvlJEaXcjP8eGObglBiMhHEaWoKeZgg=s900-c-k-c0x00ffffff-no-rj" alt="Avatar on nav-bar">
-                    </li>
-                       <a class="nav-link ava-text" href="#">Papich</a>
-                        <a class="nav-link nav-text" href="#">Log out</a>
-                        <a class="nav-link nav-text" href="#">Settings</a>
-                </ul>
-                <form class="d-flex" role="search">
-                    <button class="btn btn-outline-success d-inline-flex align-items-center dark me-2" type="button">
-                        Ask!
-                    </button>
-                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-</header>
-
-<!-- Begin page content -->
-<main class="flex-shrink-0">
-    <div class="container">
-        <div class="row">
-           <!-- settings extend -->
-           <!-- settings extend -->
-           <!-- settings extend -->
-            <div class="col-8">
-                <div>
-                    <h1>Settings: Papich </h1>
-                    <div class="row3">Login <input type="text" class="form-control" placeholder="Login"></div>
-                    <div class="row3">Email <input type="text" class="form-control" placeholder="Email"></div>
-                    <div class="row3">Nickname <input type="text" class="form-control" placeholder="Nickname"></div>
-                    <div class="upload-ava">
-                        Upload avatar
-                        <div><img class="question-image" src="https://yt3.googleusercontent.com/ytc/APkrFKYsoaQpZjWjvlJEaXcjP8eGObglBiMhHEaWoKeZgg=s900-c-k-c0x00ffffff-no-rj" alt="Avatar in settings"></div>
-                        <input type="file" class="btn btn-dark ask-button">
-                        <button type="button" class="btn btn-dark ask-button">Change avatar</button>
-                    </div>
-
-                    <button type="button" class="btn btn-dark ask-button">Ask!</button>
-                </div>
-            </div>
+{% endblock %}
 
 
-            <!-- Popular tags -->
-            <div class="col-4">
-                <div class="row pop_tags">
-                    <h2>Popular tags</h2>
-                    <div class="tags">
-                        <span class="badge bg-primary">Cats</span>
-                        <span class="badge bg-secondary">Nature</span>
-                        <span class="badge bg-success">Vk</span>
-                        <span class="badge bg-danger">BMSTU</span>
-                        <span class="badge bg-light-blue">Memes</span>
-                    </div>
-                </div>
-                <!-- Best Members -->
-                <div class="best_members">
-                    <h2>Best members</h2>
-                    <div><a href="" class="no-style-link">Mikhail Ulanov</a></div>
-                    <div><a href="" class="no-style-link">Mikhail Ulanov</a></div>
-                    <div><a href="" class="no-style-link">Mikhail Ulanov</a></div>
-                    <div><a href="" class="no-style-link">Mikhail Ulanov</a></div>
-                    <div><a href="" class="no-style-link">Mikhail Ulanov</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
-<footer class="footer mt-auto py-2 bg-dark">
-    <div class="container">
-        <span class="text-white">🧼 Created by unheard @2023 🧼</span>
-    </div>
-</footer>
-</body>
-</html>
+

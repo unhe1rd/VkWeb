@@ -1,0 +1,14 @@
+<div class="row question">
+    <div class="col-3">
+        <img src="https://fanibani.ru/wp-content/uploads/2021/07/milie004-1024x910.jpg" alt="Avatar" class="question-image">
+        {% include 'elements/like-buttons-item.html'%}
+    </div>
+    <div class="col-9">
+        <div class="question-title"> <a href="{% url 'question' question_id=question.id %}" class="no-style-link"> {{ question.title }} </a></div>
+        <div class="question-text">{{ question.content }}</div>
+        <div>
+            <input type="checkbox" id="checkbox_id1">
+            <label for="checkbox_id1">Correct!</label>
+        </div>
+    </div>
+</div>
