@@ -95,6 +95,7 @@ def _fill_questions(ratio):
     for i in range(ratio):
         persisted_questions[i].tags.set(random.sample(list(all_tags), random.randint(0, 5)))
         persisted_questions[i].save()
+        print(f"I'm create a persisted_question {i}")
 
 
 def _fill_answers(ratio):
@@ -117,6 +118,7 @@ def _fill_answers(ratio):
         Answer.objects.bulk_create(answers, ignore_conflicts=True)
 
 
+
 def _fill_likes(ratio):
     for _ in range(ratio):
         users = list(User.objects.all())
@@ -129,3 +131,6 @@ def _fill_likes(ratio):
 
         random_question.likes.add(random_user)
         random_answer.likes.add(random_user)
+
+        print(f"I'm create a like")
+    print('DB WAS CREATED!')

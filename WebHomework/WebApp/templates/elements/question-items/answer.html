@@ -4,8 +4,8 @@
         {% include 'elements/like-buttons-item.html'%}
     </div>
     <div class="col-9">
-        <div class="question-title"> <a href="{% url 'question' question_id=question.id %}" class="no-style-link"> {{ question.title }} </a></div>
-        <div class="question-text">{{ question.content }}</div>
+        <div class="question-title"> <a href="{% url 'index'%}" class="no-style-link"> {{ answer.title }} </a></div>
+        <div class="question-text">{{ answer.content }}</div>
         <div>
             <input type="checkbox" id="checkbox_id1">
             <label for="checkbox_id1">Correct!</label>

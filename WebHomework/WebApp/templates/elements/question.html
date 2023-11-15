@@ -9,7 +9,7 @@
         <div>
             <a href="{% url 'question' question_id=question.id %}" class="no-style-link question-tags"> Answer(2)</a>
             Tags:
-            <a href="{% url 'tag' tag_name='Cats' %}" class="no-style-link tags-link question-tags">Cats</a>
+            <a href="{% url 'tag' tag_name='Cats' %}" class="no-style-link tags-link question-tags">{{ question.tags.tags }}</a>
         </div>
     </div>
 </div>

@@ -72,22 +72,20 @@
             <div class="col-4">
                 <div class="row pop_tags mt-auto">
                     <h2>Popular tags</h2>
-                    <div class="tags">
-                        <a href="{% url 'tag' tag_name='Cats' %}"><span class="badge bg-primary">Cats</span></a>
-                        <a href="{% url 'tag' tag_name='Nature' %}"><span class="badge bg-secondary">Nature</span></a>
-                        <a href="{% url 'tag' tag_name='Vk' %}"><span class="badge bg-success">Vk</span></a>
-                        <a href="{% url 'tag' tag_name='BMSTU' %}"><span class="badge bg-danger">BMSTU</span></a>
-                        <a href="{% url 'tag' tag_name='Memes' %}"><span class="badge bg-light-blue">Memes</span></a>
+                    <div class="tags mt-2">
+                        {% for popular_tag in popular_tags %}
+                        <span class="badge bg-primary question-title2">
+                            <a href="/tag/{{ tag.name }}" style="text-decoration: none; color: white">{{ popular_tag.name }}</a>
+                        </span>
+                        {% endfor %}
                     </div>
                 </div>
                 <!-- Best Members -->
                 <div class="best_members">
-                    <h2>Best members</h2>
-                    <div><a href="{% url 'tag' tag_name='MikhailUlanov' %}" class="no-style-link">Mikhail Ulanov</a></div>
-                    <div><a href="{% url 'tag' tag_name='MikhailUlanov' %}" class="no-style-link">Mikhail Ulanov</a></div>
-                    <div><a href="{% url 'tag' tag_name='MikhailUlanov' %}" class="no-style-link">Mikhail Ulanov</a></div>
-                    <div><a href="{% url 'tag' tag_name='MikhailUlanov' %}" class="no-style-link">Mikhail Ulanov</a></div>
-                    <div><a href="{% url 'tag' tag_name='MikhailUlanov' %}" class="no-style-link">Mikhail Ulanov</a></div>
+                        <h2>Best members</h2>
+                        {% for best_member in best_members %}
+                            <div class="mt-2 "> <a href="{% url 'tag' tag_name='Cats' %}"><span class="badge bg-primary question-title">{{ best_member.user }}</span></a></div>
+                        {% endfor %}
                 </div>
             </div>
         </div>

@@ -8,7 +8,9 @@
         <div class="question-text">{{ main.content }}</div>
         <div>
             Tags:
-            <a href="{% url 'tag' tag_name='Cats' %}" class="no-style-link tags-link question-tags"> Cats</a>
+            {% for tag in main.tags.all %}
+                <a class="link-offset-2 fs-5 mx-1 no-style-link" href="{% url 'tag' tag %}">{{tag}}</a>
+            {% endfor %}
         </div>
     </div>
 </div>

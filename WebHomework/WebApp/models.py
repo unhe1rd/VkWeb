@@ -44,7 +44,7 @@ class Tag(models.Model):
 class Question(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
-    content = models.TextField(max_length=1000)
+    content = models.TextField(max_length=500)
     tags = models.ManyToManyField(Tag)
     likes = models.ManyToManyField(User, related_name='liked_questions')
     created_at = models.DateTimeField(auto_now_add=True)
