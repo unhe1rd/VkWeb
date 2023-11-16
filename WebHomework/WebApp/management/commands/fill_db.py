@@ -118,7 +118,6 @@ def _fill_answers(ratio):
         Answer.objects.bulk_create(answers, ignore_conflicts=True)
 
 
-
 def _fill_likes(ratio):
     for _ in range(ratio):
         users = list(User.objects.all())

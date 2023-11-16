@@ -12,7 +12,7 @@ def get_best_members(Profile):
 
 
 def get_tag(Tag):
-    return Tag.objects.annotate(num_questions=Count('question')).order_by('-num_questions')[:10]
+    return Tag.objects.annotate(num_questions=Count('question')).order_by('-num_questions')[:9]
 
 
 popular_tags = get_tag(Tag=Tag)
@@ -53,29 +53,24 @@ def question(request, question_id):
         main = Question.objects.get(pk=question_id)
     except Question.DoesNotExist:
         raise Http404('Такого вопроса не существует!')
-
     answers = Answer.objects.get_answers_for_question(question_id)
     return render(request, 'question.html', {'answers': paginate(answers, request, per_page=5), 'main': main, 'popular_tags': popular_tags, 'best_members': best_members})
 
 
 def ask(request):
-    tags = get_tag(Tag=Tag)
     return render(request, 'ask.html', {'popular_tags': popular_tags, 'best_members': best_members})
 
 
 def login(request):
-    tags = get_tag(Tag=Tag)
     return render(request, 'login.html', {'popular_tags': popular_tags, 'best_members': best_members})
 
 
 def register(request):
-    tags = get_tag(Tag=Tag)
     return render(request, 'register.html', {'popular_tags': popular_tags, 'best_members': best_members})
 
 
 def settings(request):
-    tags = get_tag(Tag=Tag)
-    return render(request, 'settings.html', {'tags': tags, 'best_members': best_members})
+    return render(request, 'settings.html', {'popular_tags': popular_tags, 'best_members': best_members})
 
 
 def handler404(request, exception):
